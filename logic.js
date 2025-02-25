@@ -1,13 +1,14 @@
 const themeBtn = document.querySelector("#theme-toggle");
 const modeLight = document.querySelector("#mode-light");
 const modeDark = document.querySelector("#mode-dark");
+const body = document.body;
 
 
 let currentTheme = 'dark'
 
 themeBtn.addEventListener("click", ()=>{
     console.log("Button is being clicked")
-    body.classList.toggle("dark.mode");
+    body.classList.toggle("dark-mode");
     
 
     if(currentTheme == "dark")
